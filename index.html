@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+    <input id="display" class="display" type="text" value="0" readonly aria-label="Calculator display">
+    <div class="keys">
+      <button type="button" data-action="clear">C</button>
+      <button type="button" data-action="operator" data-value="/">÷</button>
+      <button type="button" data-action="operator" data-value="*">×</button>
+      <button type="button" data-action="operator" data-value="-">−</button>
+
+      <button type="button" data-action="number" data-value="7">7</button>
+      <button type="button" data-action="number" data-value="8">8</button>
+      <button type="button" data-action="number" data-value="9">9</button>
+      <button type="button" data-action="operator" data-value="+">+</button>
+
+      <button type="button" data-action="number" data-value="4">4</button>
+      <button type="button" data-action="number" data-value="5">5</button>
+      <button type="button" data-action="number" data-value="6">6</button>
+      <button type="button" data-action="equals" class="equals">=</button>
+
+      <button type="button" data-action="number" data-value="1">1</button>
+      <button type="button" data-action="number" data-value="2">2</button>
+      <button type="button" data-action="number" data-value="3">3</button>
+      <button type="button" data-action="number" data-value="0" class="zero">0</button>
+      <button type="button" data-action="decimal" data-value=".">.</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
